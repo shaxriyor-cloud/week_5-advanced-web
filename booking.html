@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking - Registan Travel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header">
+    <a class="logo" href="index.html">Registan<span>Travel</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booking.html" class="current">Booking</a>
+    </nav>
+  </header>
+
+  <main class="booking">
+    <h1>Book your tour</h1>
+    <form id="booking-form" novalidate>
+      <div class="field">
+        <label for="name" class="required">Full name</label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email" class="required">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="tour" class="required">Tour</label>
+        <select id="tour" name="tour">
+          <option value="" data-price="0">Choose a tour</option>
+          <option value="tashkent" data-price="35">Old Tashkent Walk (1 day) - 35 USD</option>
+          <option value="samarkand" data-price="120">Registan &amp; Gur-e-Amir (2 days) - 120 USD</option>
+          <option value="khiva" data-price="210">Khiva Itchan Kala (3 days) - 210 USD</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="travellers" class="required">Number of travellers (1-12)</label>
+        <input type="number" id="travellers" name="travellers" min="1" max="12" value="1">
+      </div>
+      <div class="field">
+        <label for="date">Preferred date</label>
+        <input type="date" id="date" name="date">
+      </div>
+
+      <div class="total" id="total" aria-live="polite">Choose a tour to see the total.</div>
+
+      <button type="submit" class="btn form-btn">Send request</button>
+    </form>
+
+    <div id="message" class="message" role="alert" hidden></div>
+  </main>
+
+  <footer>
+    <p>Registan<span>Travel</span> · Tashkent, Uzbekistan · info@registan-travel.example</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

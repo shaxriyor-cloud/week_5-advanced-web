@@ -1,0 +1,12 @@
+/* Part C: only the brand colours + fonts; layout comes from Bootstrap */
+body { padding-top: 72px; background: #FAF6EE; font-family: Arial, sans-serif; }
+h1, h2, h3, .navbar-brand { font-family: Georgia, serif; color: #0B1F4B; }
+.navbar-brand, .navbar .nav-link { color: #fff; }
+.navbar .nav-link:hover { background: #E0A526; color: #0B1F4B; }
+.navbar .nav-link.active { border-bottom: 3px solid #E0A526; color: #fff; }
+.btn-night { background: #0B1F4B; color: #fff; }
+.btn-night:hover { background: #E0A526; color: #0B1F4B; }
+.badge-gold { background: #E0A526; color: #0B1F4B; }
+.hero-bs { background: linear-gradient(135deg, #fbe7b0, #f2c45a); }
+.navbar-night { background: #0B1F4B; }
+.hero-text { max-width: 560px; }
